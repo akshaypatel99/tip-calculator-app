@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap"
+			rel="stylesheet"
+		/>
+
+		<link rel="stylesheet" href="./styles.css" />
+		<title>Frontend Mentor | Tip calculator app</title>
+
+		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+		<style>
+			.attribution {
+				font-size: 11px;
+				text-align: center;
+			}
+			.attribution a {
+				color: hsl(228, 45%, 44%);
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<img src="./images/logo.svg" alt="Splitter logo" />
+		</header>
+		<main>
+			<article>
+				<form action="#">
+					<div class="inputs">
+						<div class="form-group">
+							<label for="bill" class="input-label">Bill</label>
+							<img
+								src="./images/icon-dollar.svg"
+								alt="dollar icon"
+								class="icon"
+							/>
+							<input
+								type="number"
+								id="bill"
+								name="bill"
+								class="input-text"
+								placeholder="0"
+							/>
+						</div>
+						<fieldset class="form-group">
+							<legend for="tip" class="input-label">Select Tip %</legend>
+							<div class="checkbox-buttons">
+								<div class="checkbox-button">
+									<input
+										type="checkbox"
+										name="tip"
+										id="5%"
+										value="5"
+										class="tip-percentage checkboxBtn"
+										aria-label="5%"
+									/>
+									<label for="5%" class="checkbox-label">5%</label>
+								</div>
+								<div class="checkbox-button">
+									<input
+										type="checkbox"
+										name="tip"
+										id="10%"
+										value="10"
+										class="tip-percentage checkboxBtn"
+										aria-label="10%"
+									/>
+									<label for="10%" class="checkbox-label">10%</label>
+								</div>
+								<div class="checkbox-button">
+									<input
+										type="checkbox"
+										name="tip"
+										id="15%"
+										value="15"
+										class="tip-percentage checkboxBtn"
+										aria-label="15%"
+									/>
+									<label for="15%" class="checkbox-label">15%</label>
+								</div>
+								<div class="checkbox-button">
+									<input
+										type="checkbox"
+										name="tip"
+										id="25%"
+										value="25"
+										class="tip-percentage checkboxBtn"
+										aria-label="25%"
+									/>
+									<label for="25%" class="checkbox-label">25%</label>
+								</div>
+								<div class="checkbox-button">
+									<input
+										type="checkbox"
+										name="tip"
+										id="50%"
+										value="50"
+										class="tip-percentage checkboxBtn"
+										aria-label="50%"
+									/>
+									<label for="50%" class="checkbox-label">50%</label>
+								</div>
+								<input
+									type="number"
+									id="custom-tip"
+									name="tip"
+									class="input-text input-tip"
+									placeholder="Custom"
+									aria-label="Custom tip percentage"
+								/>
+							</div>
+						</fieldset>
+						<div class="form-group">
+							<label for="persons" class="input-label">Number of People</label>
+							<img
+								src="./images/icon-person.svg"
+								alt="person icon"
+								class="icon"
+							/>
+							<input
+								type="number"
+								id="persons"
+								name="persons"
+								class="input-text"
+								placeholder="1"
+								min="1"
+							/>
+						</div>
+					</div>
+					<div class="outputs">
+						<div class="form-group results">
+							<div>
+								<div class="result">
+									<label for="tip-amount" class="result-label"
+										>Tip Amount<br /><span>/ person</span></label
+									>
+									<input
+										type="text"
+										id="tip-amount"
+										name="tip-amount"
+										class="result-text"
+										value="$0.00"
+										readonly
+									/>
+								</div>
+								<div class="result">
+									<label for="total" class="result-label"
+										>Total<br /><span>/ person</span></label
+									>
+									<input
+										type="text"
+										id="total"
+										name="total"
+										class="result-text"
+										value="$0.00"
+										readonly
+									/>
+								</div>
+							</div>
+
+							<button type="reset" class="reset">Reset</button>
+						</div>
+					</div>
+				</form>
+			</article>
+		</main>
+
+		<footer class="attribution">
+			Challenge by
+			<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+				>Frontend Mentor</a
+			>. Coded by <a href="https://www.akshaypatel.dev">Akshay Patel</a>.
+		</footer>
+		<script src="./app.js"></script>
+	</body>
+</html>
