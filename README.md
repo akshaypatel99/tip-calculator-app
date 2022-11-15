@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/akshaypatel99/frontend-mentor/tree/main/tip-calculator-app](https://github.com/akshaypatel99/frontend-mentor/tree/main/tip-calculator-app)
+- Solution URL: [https://github.com/akshaypatel99/tip-calculator-app](https://github.com/akshaypatel99/tip-calculator-app)
 - Live Site URL: [https://akshaypatel99.github.io/tip-calculator-app/](https://akshaypatel99.github.io/tip-calculator-app/)
 
 ## My process
