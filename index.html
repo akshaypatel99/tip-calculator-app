@@ -9,14 +9,12 @@
 			rel="icon"
 			type="image/png"
 			sizes="32x32"
-			href="./images/favicon-32x32.png"
-		/>
+			href="./images/favicon-32x32.png" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap"
-			rel="stylesheet"
-		/>
+			rel="stylesheet" />
 
 		<link rel="stylesheet" href="./styles.css" />
 		<title>Frontend Mentor | Tip calculator app</title>
@@ -34,26 +32,26 @@
 	</head>
 	<body>
 		<header>
-			<img src="./images/logo.svg" alt="Splitter logo" />
+			<img src="./images/logo.svg" alt="" aria-hidden="true" />
+			<h1 class="sr-only">Splitter</h1>
 		</header>
 		<main>
 			<article>
-				<form action="#">
+				<form id="form" action="#">
 					<div class="inputs">
 						<div class="form-group">
 							<label for="bill" class="input-label">Bill</label>
 							<img
 								src="./images/icon-dollar.svg"
-								alt="dollar icon"
+								alt=""
 								class="icon"
-							/>
+								aria-hidden="true" />
 							<input
 								type="number"
 								id="bill"
 								name="bill"
 								class="input-text"
-								placeholder="0"
-							/>
+								placeholder="0" />
 						</div>
 						<fieldset class="form-group">
 							<legend for="tip" class="input-label">Select Tip %</legend>
@@ -64,9 +62,7 @@
 										name="tip"
 										id="5%"
 										value="5"
-										class="tip-percentage checkboxBtn"
-										aria-label="5%"
-									/>
+										class="tip-percentage checkboxBtn" />
 									<label for="5%" class="checkbox-label">5%</label>
 								</div>
 								<div class="checkbox-button">
@@ -75,9 +71,7 @@
 										name="tip"
 										id="10%"
 										value="10"
-										class="tip-percentage checkboxBtn"
-										aria-label="10%"
-									/>
+										class="tip-percentage checkboxBtn" />
 									<label for="10%" class="checkbox-label">10%</label>
 								</div>
 								<div class="checkbox-button">
@@ -86,9 +80,7 @@
 										name="tip"
 										id="15%"
 										value="15"
-										class="tip-percentage checkboxBtn"
-										aria-label="15%"
-									/>
+										class="tip-percentage checkboxBtn" />
 									<label for="15%" class="checkbox-label">15%</label>
 								</div>
 								<div class="checkbox-button">
@@ -97,9 +89,7 @@
 										name="tip"
 										id="25%"
 										value="25"
-										class="tip-percentage checkboxBtn"
-										aria-label="25%"
-									/>
+										class="tip-percentage checkboxBtn" />
 									<label for="25%" class="checkbox-label">25%</label>
 								</div>
 								<div class="checkbox-button">
@@ -108,9 +98,7 @@
 										name="tip"
 										id="50%"
 										value="50"
-										class="tip-percentage checkboxBtn"
-										aria-label="50%"
-									/>
+										class="tip-percentage checkboxBtn" />
 									<label for="50%" class="checkbox-label">50%</label>
 								</div>
 								<input
@@ -119,25 +107,23 @@
 									name="tip"
 									class="input-text input-tip"
 									placeholder="Custom"
-									aria-label="Custom tip percentage"
-								/>
+									aria-label="Custom tip percentage" />
 							</div>
 						</fieldset>
 						<div class="form-group">
 							<label for="persons" class="input-label">Number of People</label>
 							<img
 								src="./images/icon-person.svg"
-								alt="person icon"
+								alt=""
 								class="icon"
-							/>
+								aria-hidden="true" />
 							<input
 								type="number"
 								id="persons"
 								name="persons"
 								class="input-text"
 								placeholder="1"
-								min="1"
-							/>
+								min="1" />
 						</div>
 					</div>
 					<div class="outputs">
@@ -153,8 +139,7 @@
 										name="tip-amount"
 										class="result-text"
 										value="$0.00"
-										readonly
-									/>
+										readonly />
 								</div>
 								<div class="result">
 									<label for="total" class="result-label"
@@ -166,8 +151,7 @@
 										name="total"
 										class="result-text"
 										value="$0.00"
-										readonly
-									/>
+										readonly />
 								</div>
 							</div>
 
