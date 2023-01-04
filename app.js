@@ -9,7 +9,7 @@ let total = document.getElementById('total');
 // Select one tip input only
 const tipInputs = document.querySelectorAll('input[name="tip"]');
 tipInputs.forEach((ti) => {
-	ti.addEventListener('click', () => {
+	ti.addEventListener('input', () => {
 		tipInputs.forEach((input) => {
 			input.checked = false;
 		});
